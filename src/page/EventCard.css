@@ -1,0 +1,28 @@
+.container{
+    width: 200px;
+    padding: 5px;
+    /* border: 1px solid black; */
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #0FA4AF;
+    transition: 2s ease-in-out;
+    
+}
+.date-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.dura{
+    font-size: 12px;
+    margin-top: 3px;
+}
+.name{
+    font-family: cursive;
+}
+.footer{
+    font-size: 9px;
+    color: whitesmoke;
+}

@@ -1,0 +1,63 @@
+.model-backdrop{
+    background: rgba(0, 0, 0, 0.5); /* Dim background */
+    z-index: 10;
+    top:0;
+    left:0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+.model-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+.modal{
+  display: flex;
+  flex-direction: column;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 15px;
+}
+
+
+.model-backdrop.show .modal {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .heading{
+    display: flex;
+    justify-content: space-between;
+  }
+  .heading-name{
+    margin-left: 35%;
+    font-family: cursive;
+  }
+  .cross{
+    color: red;
+  }
+  .desc{
+    font-size: 13px;
+    color: slategrey;
+  }
+  .info{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .textt{
+    font-size: 11px;
+  }
