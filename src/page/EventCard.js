@@ -14,8 +14,6 @@ const EventCard = ({name,date,location,description,duration}) => {
         <div>{description}</div>
         <div className='dura'>Durration: {duration}</div>
         <p className='footer'>Click to know more..</p>
-
-
     </div>
   )
 }

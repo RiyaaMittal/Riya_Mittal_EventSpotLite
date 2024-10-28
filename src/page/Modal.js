@@ -3,9 +3,8 @@ import './Modal.css'
 
 const Modal = ({selectedEvent,setshow}) => {
     const handleOutsideClick = (e) => {
-        // Check if the clicked element is the modal backdrop
-        if (e.target.classList.contains('model-backdrop')) {
-          
+        // Check if the clicked element is the modal-backdrop if yeas means we have to close the modal
+        if (e.target.classList.contains('model-backdrop')) {     
           setshow(false);//so that it disappears0
         }
     };
